@@ -27,4 +27,4 @@ async def nicosan(ctx):
                           ' He has his own YT - Channel called "NicoSan BS". Make sure to subscribe to his channel!')
     await ctx.send('https://www.youtube.com/channel/UCBSLxhPZPNR2f1N-JRo53YQ', embed=embed)
 
-client.run("ODE2OTQzODk4NjgwMzYwOTcx.YECUSw.kHHibyV0rXG7LQYpgAqNX5k9lLo")
+client.run(os.environ['token'])
