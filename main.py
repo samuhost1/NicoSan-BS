@@ -1,5 +1,6 @@
 import discord
 import os
+import random
 from discord.ext import commands
 
 client = commands.Bot(command_prefix="n!", inline=True, intents=discord.Intents.all())
