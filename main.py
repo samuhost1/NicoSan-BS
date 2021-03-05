@@ -14,6 +14,12 @@ client.remove_command('help')
 async def on_ready():
      await client.change_presence(activity=discord.Game(f'n!help | Made by Samu', status=discord.Status.online))
 
+@client.event
+async def on_message(message):
+    if message.channel.id == 817322365586374696:
+        await message.add_reaction('<:halal:816753629523607583>')
+        await message.add_reaction('<:HARAMCopy:816753627791228961>')
+     
 @client.command()
 async def help(ctx):
     embed = discord.Embed(description='Here´s a list of all my commands. My prefix is `n!`', colour=normcol)
